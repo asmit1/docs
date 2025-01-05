@@ -1,51 +1,28 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Novel Docs",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/logo.svg",
+    "light": "/logo/logo.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+    "primary": "#334155",
+    "light": "#cbd5e1",
+    "dark": "#334155",
+    "background": {
+      "dark": "#020817"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Demo",
+    "url": "https://novelspace.me/"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Components",
+      "icon": "react",
+      "url": "components"
     }
   ],
   "navigation": [
@@ -58,34 +35,44 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Guides",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "guides/overview",
+        {
+          "group": "Using Tailwind",
+          "pages": [
+            "guides/tailwind/setup",
+            "guides/tailwind/extensions",
+            "guides/tailwind/slash-command",
+            "guides/tailwind/bubble-menu"
+          ]
+        },
+        "guides/ai-command",
+        "guides/image-upload",
+        "guides/global-drag-handle"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Components",
       "pages": [
-        "api-reference/introduction"
+        "components/editor-root",
+        "components/editor-content",
+        "components/editor-command",
+        "components/editor-command-item",
+        "components/editor-bubble",
+        "components/editor-bubble-item"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Utils",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "components/utils/use-editor"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
+    "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "linkedin": "https://www.linkedin.com/company/mintsearch"
   }
 }
